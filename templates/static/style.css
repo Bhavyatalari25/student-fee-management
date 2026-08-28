@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #0066cc, #003366);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main form */
+
+.container {
+    width: 500px;
+    max-width: 90%;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Summary */
+
+.summary {
+    width: 550px;
+    max-width: 90%;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+    text-align: center;
+
+    color: #003366;
+
+    margin-bottom: 30px;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #0066cc;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #004c99;
+}
+
+
+/* Summary information */
+
+.details p {
+    font-size: 17px;
+
+    padding: 10px 0;
+
+    margin: 0;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #333;
+}
+
+
+.details strong {
+    color: #003366;
+}
+
+
+.status {
+    font-weight: bold;
+
+    color: #0066cc;
+}
+
+
+.summary a {
+    display: block;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #0066cc;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.summary a:hover {
+    text-decoration: underline;
+}
+
+.details strong {
+    color: #003366;
+}
+
+
+.status {
+    font-weight: bold;
+
+    color: #0066cc;
+}
+
+
+.summary a {
+    display: block;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #0066cc;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.summary a:hover {
+    text-decoration: underline;
+}
+}
+
+.details p {
+    font-size: 18px;
+
+    margin: 0;
+
+    padding: 11px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    color: #1976d2;
+
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    text-align: center;
+
+    background: #1976d2;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+}
+
+.button:hover {
+    background: #125ca8;
+}

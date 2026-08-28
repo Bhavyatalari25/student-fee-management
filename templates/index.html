@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Fee Management System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #dbeafe,
+                #e0e7ff
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 520px;
+            max-width: 90%;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+
+            padding: 12px;
+
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+
+            font-size: 15px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        button {
+            width: 100%;
+
+            padding: 13px;
+
+            margin-top: 25px;
+
+            border: none;
+            border-radius: 7px;
+
+            background: #2563eb;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student Fee Management System</h1>
+
+    <form action="/calculate" method="POST">
+
+        <label>Student Name</label>
+        <input
+            type="text"
+            name="student_name"
+            placeholder="Enter student name"
+            required
+        >
+
+        <label>Roll Number</label>
+        <input
+            type="text"
+            name="student_id"
+            placeholder="Enter roll number"
+            required
+        >
+
+        <label>Course</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="B.Com">B.Com</option>
+            <option value="B.Sc">B.Sc</option>
+            <option value="B.A">B.A</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+            <option value="MBA">MBA</option>
+        </select>
+
+        <label>Year</label>
+        <select name="year" required>
+            <option value="">Select Year</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+        </select>
+
+        <label>Total Fee (₹)</label>
+        <input
+            type="number"
+            name="total_fee"
+            placeholder="Enter total fee"
+            min="0"
+            step="0.01"
+            required
+        >
+
+        <label>Amount Paid (₹)</label>
+        <input
+            type="number"
+            name="amount_paid"
+            placeholder="Enter amount paid"
+            min="0"
+            step="0.01"
+            required
+        >
+
+        <button type="submit">
+            Calculate Fee
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
